@@ -2,8 +2,9 @@
 html{
 
 	/*height: calc(100% + 72px);*/*/
-	padding-bottom: 80px
+	/*padding-bottom: 80px*/
 }
+
 .graybg{
 	background: #1C1C1C;
 }
@@ -83,12 +84,6 @@ html{
 	  -o-background-size: cover;
 	  background-size: cover;
 */
-
-
-
-
-
-
 @font-face {
 font-family: 'Atlas Grotesk Web';
 src: url('AtlasGrotesk-Regular-Web.eot');
@@ -211,15 +206,6 @@ ul{
 	opacity: 1;
 }
 
-.project_title{
-	background-color: green;
-
-}
-
-.project_link{
-	background-color: pink;
-}
-
 
 img.bg {
   /* Set rules to fill background */
@@ -242,7 +228,9 @@ body {
 
 
 a{
-	color: gray;
+	color: white;
+	opacity:0.6;
+
 }
 
 
