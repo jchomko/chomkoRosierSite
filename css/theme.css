@@ -2,6 +2,7 @@
 html{
 
 	/*height: calc(100% + 72px);*/*/
+	padding-bottom: 80px
 }
 .graybg{
 	background: #1C1C1C;
