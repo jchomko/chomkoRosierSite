@@ -5,6 +5,12 @@ html{
 	/*padding-bottom: 80px*/
 }
 
+body:after{
+	display:none:
+	content: url(../images/shadowing-web50.jpg) url(../images/heart-web50.jpg) url(../images/story-web50.jpg)url(../images/colors-web50.jpg)url(../images/lille-web50.jpg)
+
+}
+
 .graybg{
 	background: #1C1C1C;
 }
@@ -99,6 +105,7 @@ font-stretch: normal;
 
 body {
 	background-size: cover;
+	margin:0px
  /*background-color:#111111;   */
 }
 
@@ -244,7 +251,7 @@ a{
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		margin-left:20px;
+		margin-left:15px;
 		padding-bottom: 0px;
 		padding:0px;
 		font-size: 14pt;
@@ -267,18 +274,18 @@ a{
 
 		background:transparent;
 		overflow:hidden;
-	    /*margin:20px;*/
+	  /*margin:5px;*/
 		display: inline-block;
 		height:auto;
 		color:white;
-		margin:14px;
+		margin-left:15px;
 	}
 
 	.text{
 
 		background:transparent;
 		overflow:hidden;
-	    /*margin:20px;*/
+	  /*margin:0px;*/
 		display: inline-block;
 		height:auto;
 
@@ -286,7 +293,7 @@ a{
 		max-width: 100%;
 		/*max-width: 850px;*/
 		overflow:hidden;
-	    display: inline-block;
+	  display: inline-block;
 		height:auto;
 		font-size: 12px;
 
