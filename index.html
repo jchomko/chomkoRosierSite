@@ -29,6 +29,8 @@
   <br>
   <input class="toggle"  type="button" id="about" value="About" />
   <br>
+  <input class="toggle active" type="button" id="singapore" value="Signals of Tomorrow Lab" />
+  <br>
   <input class="toggle active" type="button" id="hok" value="Heart of a King" />
   <br>
   <input class="toggle" type="button" id="shadowing" value="Shadowing" />
@@ -58,6 +60,7 @@
 <script>
 
     var images = [
+      'images/singapore-web50.jpg',
       'images/heart-web50.jpg',
       'images/shadowing-web50.jpg',
       'images/story-web50.jpg',
@@ -93,12 +96,18 @@
 
       });
 
-			$("#hok").click(function (e) {
+			$("#singapore").click(function (e) {
 				e.preventDefault();
 				$("#description_text").html("Heart of a King is a prototype visitor experience designed for <a href='http://www.hrp.org.uk/' target='_blank'>Historic Royal Palaces</a> in London, placing visitors in the footsteps and emotional state of Charles I on the day of his execution in 1649. Visitors received a wooden, heart-shaped totem. The heart creates a haptic heartbeat that acts as a compass, increasing in strength when pointed to Charles' path. Following this compass, visitors trace Charles' final journey through St James Park and Whitehall, arriving in front of Banqueting House, the place of his execution where the heart ceases to beat.<p>Chomko & Rosier have now been selected to develop The Lost Palace; an automated visitor experience recreating the Palace of Whitehall on the streets of central London in Summer 2016.<p><a href = 'https://vimeo.com/140247678' target='_blank'>Video</a>");
+				 $('#base').removeClass().addClass('singaporebg');
+                
+			});
+    
+        $("#hok").click(function (e) {
+          e.preventDefault();
+              $("#description_text").html("Heart of a King is a prototype visitor experience designed for <a href='http://www.hrp.org.uk/' target='_blank'>Historic Royal Palaces</a> in London, placing visitors in the footsteps and emotional state of Charles I on the day of his execution in 1649. Visitors received a wooden, heart-shaped totem. The heart creates a haptic heartbeat that acts as a compass, increasing in strength when pointed to Charles' path. Following this compass, visitors trace Charles' final journey through St James Park and Whitehall, arriving in front of Banqueting House, the place of his execution where the heart ceases to beat.<p>Chomko & Rosier have now been selected to develop The Lost Palace; an automated visitor experience recreating the Palace of Whitehall on the streets of central London in Summer 2016.<p><a href = 'https://vimeo.com/140247678' target='_blank'>Video</a>");
 				 $('#base').removeClass().addClass('heartbg');
 			});
-
 
       $("#shadowing").click(function (e) {
         e.preventDefault();
