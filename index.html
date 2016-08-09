@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id = "base" class ="heartbg">
+<html id = "base" >
 
 <!-- <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" /> -->
 <!-- <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" /> -->
@@ -26,6 +26,8 @@
   <br>
   <input class="toggle"  type="button" id="about" value="About" />
   <br>
+	<input class="toggle" type="button" id="lostpalace" value="Lost Palace" />
+	<br>
   <input class="toggle" type="button" id="singapore" value="Signals of Tomorrow" />
   <br>
   <input class="toggle" type="button" id="heart" value="Heart of a King" />
@@ -51,9 +53,12 @@
       'images/shadowing_york_web.jpg',
       'images/story-web50.jpg',
       'images/colors-web50.jpg',
-      'images/lille-web50.jpg'];
+      'images/lille-web50.jpg',
+			'images/lostpalace_web50.jpg'];
 
     var about = "Chomko & Rosier create interactive experiences, installations, products and infrastructures for the public realm. The London-based studio was founded in 2014 by Matthew Rosier and Jonathan Chomko, with backgrounds in architecture and interaction design informing their approach. Chomko & Rosier's work has been installed nationally and internationally, and recognised as a Design of the Year by the London Design Museum. Past clients include the UK Space Agency, Historic Royal Palaces, British Council, FutureEverything, Illuminating York, Watershed and Media Ambition Tokyo.<p>Follow <a href='https://twitter.com/chomkorosier' target='_blank'> @ChomkoRosier</a> for updates. <p>Press package <a href='https://drive.google.com/open?id=0B6hUb58rvOx4QW1mQ3RRRl94X0U' target='_blank'> here.</a>";
+
+		var lostpalace  = "The Lost Palace is a spatialised sonic recreation of the Palace of Whitehall. This project has given us a chance to really explore the possibilities of how you can create the sense of a place that once existed. As a studio that strives to produce evocative work for the public realm, it's been exciting to offer an entirely new experience of Whitehall. We've used handheld devices and architectural installations in combination with interaction and digital design to create an experience that lets the past bleed through into the present day streets. The richness of The Lost Palace ultimately derives from the diversity in the project team; with designers, theatre makers, developers, fabricators, historians and the team at Historic Royal Palaces working in collaboration.<p>Tickets can be found <a href='http://thelostpalace.com/' target='_blank'>here</a>";
 
 		var singapore = "Chomko & Rosier lead a five-day workshop group as part of the 'Signals of Tomorrow' Innovation Lab in Singapore run by <a href='http://futureeverything.org/news/futureeverything-singapore/ 'target='_blank'> FutureEverything </a>. The lab explored the potential implications and opportunities of Singapore's 'Smart Nation' project. The prototypes developed within the lab were presented at the Art Science Museum as part of the Future Everything conference.<p>Our prototype attempted to capture occupant desires relating to the design of their public housing shared spaces. Occupants place miniature digitally-tracked objects around their public void-deck spaces to visually identify where they feel the relevant design issue should be addressed. The object locations are captured in data which is then accessible to both the occupants and planners/designers. This allows occupants to build a shared image of their ideal spaces, and the designers and planners an insight into these desires which they can act on through further discussion and then eventually, design implementation.";
 
@@ -88,8 +93,8 @@ function switchContent(h){
 			if(hash.length > 1){
 			 name	= hash.substring(1);
 				}else{
-				name = "about";
-				hash = "#about";
+				name = "lostpalace";
+				hash = "#lostpalace";
 			}
 
 
@@ -121,6 +126,13 @@ function switchContent(h){
 				 $('#base').removeClass().addClass('singaporebg');
 				 	window.location.hash = "singapore";
 
+			});
+
+			$("#lostpalace").click(function (e) {
+          e.preventDefault();
+              $("#description_text").html(lostpalace);
+							window.location.hash = "heart";
+				 $('#base').removeClass().addClass('lostpalacebg');
 			});
 
       $("#heart").click(function (e) {
